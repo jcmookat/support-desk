@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/users' //API to register, made it the backend. Make sure to use PROXY at package.json and enter the SERVER url (i.e. http://localhost:5000)
+const API_URL = '/api/users' //API to register, made it at the backend (server.js). Make sure to use PROXY at package.json and enter the SERVER url (i.e. http://localhost:5000)
 
 const register = async (userData) => {
 	const response = await axios.post(API_URL, userData)
