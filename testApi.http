@@ -60,3 +60,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmM
 DELETE http://localhost:5000/api/tickets/6216d7621e9451aa6b3f6280
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+
+### Get Notes
+GET http://localhost:5000/api/tickets/62171d825aad38a169f01852/notes
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+
+### Create Notes
+POST http://localhost:5000/api/tickets/62171d825aad38a169f01852/notes
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+{
+    "text": "I need help"
+}
