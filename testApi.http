@@ -1,0 +1,62 @@
+
+### REGISTER
+POST http://localhost:5000/api/users/
+content-type: application/json
+
+{
+    "name": "Mookat",
+    "email": "mookat@gmail.com",
+    "password": "123456"
+}
+
+
+### LOGIN
+POST http://localhost:5000/api/users/login
+content-type: application/json
+
+{
+    "email": "mookat@gmail.com",
+    "password": "123456"
+}
+
+### Get User
+GET http://localhost:5000/api/users/me
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+
+### Get Tickets
+GET http://localhost:5000/api/tickets
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+
+### Create Ticket
+POST http://localhost:5000/api/tickets
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+{
+    "product": "iPhone",
+    "description": "not turning on"
+}
+
+### Get Ticket
+GET http://localhost:5000/api/tickets/6216de67478a6a70153bca2f
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+### Update Ticket
+PUT http://localhost:5000/api/tickets/6216de67478a6a70153bca2f
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
+
+{
+    "product": "iPad",
+    "description": "screen damage"
+}
+
+### Delete Ticket
+DELETE http://localhost:5000/api/tickets/6216d7621e9451aa6b3f6280
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGUwNmNmMjg0OGVmZjk5ZDc1YjM0MSIsImlhdCI6MTY0NTA4OTQ5OSwiZXhwIjoxNjQ3NjgxNDk5fQ.GI2pVz3Lw9AtogJj2vNyFhEd0-bfK21f9PvGOv6aY2E
